@@ -2,7 +2,6 @@ $(document).ready(function() {
 
     $('.listItemInput').focus(); //focus tell us what selector the code is reference
 
-    $(document)
 
 
 
