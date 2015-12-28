@@ -6,7 +6,8 @@ $(document).ready(function() {
 
 
     // Add to list
-    .on('click', '.addToList', function() {
+    $(document).on('click', '.addToList', function() {
+        event.preventDefault();
         var itemToAdd = $('input[name="listItemInput"]').val().trim(); //.val gets current value, trim maybe deletes white s
         if ( itemToAdd ) { // as long as the variable is not null----- then itll workout (an assertion)
             $('.listItems').append('<div class="input"><input type="checkbox" name="item" class="item"/> '+ itemToAdd +'</div>'); //value defines initial value before anything is entered
